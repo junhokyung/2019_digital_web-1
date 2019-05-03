@@ -10,7 +10,7 @@
 
 		body{background-image:url(../images/bg_grid.gif);}
 
-		div#header{width: 980px;height: 100px;margin: 0 auto;background-color:skyblue;position: relative;display:none;}
+		div#header{width: 980px;height: 100px;margin: 0 auto;background-color:skyblue;position: relative;}
 		div#header>h1{width:100px;margin:0 auto;text-align:center;background-color:gray;}
 		div#header>div.util_menu{
 			width:200px;height: 40px;
@@ -42,9 +42,11 @@
 		ul.menu{width:980px;margin:0 auto;}
 		ul.menu>li{
 			float:left;width:196px;height:40px;
-			background-color:skyblue;text-align:center;line-height:40px;
+			background-color:white;text-align:center;line-height:40px;
 			border-right:1px solid black;
 		}
+		ul.menu>li:nth-child(1){border-left: 1px solid #000;}
+		ul.menu>li:hover{background-color:gray;color:white;cursor:pointer;}
 	</style>
 </head>
 <body>
@@ -53,7 +55,16 @@
 	<div id="header">
 		<h1>LOGO</h1>
 		<div class="util_menu">util_menu</div>
-		<div class="gnb_menu">gnb menu</div>
+		<div class="gnb_menu">
+			<ul class="menu">
+				<li>menu1</li>
+				<li>menu2</li>
+				<li>menu3</li>
+				<li>menu4</li>
+				<li>menu5</li>
+			</ul>
+
+		</div>
 	</div>
 
 	<div class="box">
@@ -72,13 +83,7 @@
 	</div>
 
 	<!-- ul.menu>li*5>{menu$} -->
-	<ul class="menu">
-		<li>menu1</li>
-		<li>menu2</li>
-		<li>menu3</li>
-		<li>menu4</li>
-		<li>menu5</li>
-	</ul>
+	
 	
 
 
