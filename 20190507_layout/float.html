@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>float</title>
+	<style>
+		div.wrap{width:500px;background-color:#ddd;margin:0 auto;}
+		div.wrap>div{width:200px;}
+		div.wrap:after{content:"";clear:both;display:block;}
+		div.wrap>div.box01{background-color:skyblue;float:left;margin-left:20px;}
+		div.wrap>div.box02{background-color:pink;float:right;margin-right:20px;}
+
+		div.box05{width: 500px;height: 100px;background-color:blue;margin:0 auto;}
+		/*div.wrap>div.box03{width:400px;background-color:pink;clear:both;}*/
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="box01">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto necessitatibus, aut vero quidem dignissimos ipsa praesentium dolores, tempore corporis quibusdam beatae laudantium facilis tempora ex, eveniet sit incidunt harum odio?
+		</div>
+		<div class="box02">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores vel, numquam asperiores quae impedit praesentium totam earum autem delectus libero.
+		</div>
+		<!-- <div class="box03">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, nesciunt.
+		</div> -->
+	</div>
+	<div style="height:400px;background-color:gray"></div>
+
+	<div class="box05">안녕하세요.</div>
+</body>
+</html>

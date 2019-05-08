@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>float</title>
+	<style>
+		*{margin:0;padding:0;}
+		div.wrap{width: 500px;background-color:gray;margin:0 auto;}
+		div.wrap:after{content:"";clear:both;display:block;}
+		div.wrap>div.box01{
+			float:left;width:200px;
+			background-color:skyblue;
+			margin-left:25px;
+		}
+		div.wrap>div.box02{
+			float:right;width:200px;
+			background-color:pink;
+			margin-right:25px;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="box01">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, voluptas.
+		</div>
+		<div class="box02">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nobis dignissimos laudantium. Quis repellendus autem consequuntur repudiandae esse labore non!</div>
+		
+	</div>
+	<div style="height:100px;background-color:violet"></div>
+</body>
+</html>
