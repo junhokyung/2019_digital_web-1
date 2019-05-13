@@ -25,11 +25,13 @@ header#header_wrap>div.util_menu>ul>li:hover a{color:white;}
 
 header#header_wrap>nav.gnb_wrap{
 	width:980px;height:45px;
-	background-color:violet;
+	background-color:#1d5da4;
 	position: absolute;
 	bottom:0;text-align:center;
 }
-
-header#header_wrap>nav.gnb_wrap>ul{background-color: #1d5da4;}
-header#header_wrap>nav.gnb_wrap>ul>li{float: left;width:16.66%;}
-header#header_wrap>nav.gnb_wrap>ul>li>a{display: block;text-align:center;line-height:45px;color:white;font-weight:bold;}
+header#header_wrap>nav.gnb_wrap>ul{}
+header#header_wrap>nav.gnb_wrap>ul>li{float:left;width:16.6666%;}
+header#header_wrap>nav.gnb_wrap>ul>li>a{display: block;color:white;font-weight:bold;line-height:45px;}
+header#header_wrap>nav.gnb_wrap>ul>li>a:hover{
+	background-color:#95c8ff;color:#1d5da4;
+}
