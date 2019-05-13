@@ -23,12 +23,13 @@ header#header_wrap>div.util_menu>ul>li>a{display:block;line-height:35px;}
 header#header_wrap>div.util_menu>ul>li:hover{background-color:blue;}
 header#header_wrap>div.util_menu>ul>li:hover a{color:white;}
 
-
-
-
 header#header_wrap>nav.gnb_wrap{
 	width:980px;height:45px;
 	background-color:violet;
 	position: absolute;
 	bottom:0;text-align:center;
 }
+
+header#header_wrap>nav.gnb_wrap>ul{background-color: #1d5da4;}
+header#header_wrap>nav.gnb_wrap>ul>li{float: left;width:16.66%;}
+header#header_wrap>nav.gnb_wrap>ul>li>a{display: block;text-align:center;line-height:45px;color:white;font-weight:bold;}
