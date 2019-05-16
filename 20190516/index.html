@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>bxslider</title>
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider({
+				auto:true,mode:'vertical'
+			});
+		});
+	</script>
+	<style>
+		*{padding:0;margin:0;}
+		div.visual{width:980px;margin:0 auto;}
+		div.visual img{display: block;}
+
+		.bx-wrapper {
+     box-shadow:none; 
+     border:none; 
+     background: #fff; 
+		}
+		ul.slider>li{width:980px;height:408px;}
+	</style>
+
+</head>
+<body>
+	<div class="visual">
+		<!-- ul.slider>li*3>img[src="images/pc0$.jpg"] -->
+		<ul class="slider">
+			<li><img src="images/pc01.jpg" alt=""></li>
+			<li><img src="images/pc02.jpg" alt=""></li>
+			<li><img src="images/pc03.jpg" alt=""></li>
+		</ul>
+	</div>
+</body>
+</html>
