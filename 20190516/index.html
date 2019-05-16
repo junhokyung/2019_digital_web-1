@@ -9,22 +9,41 @@
 	<script src="js/jquery.bxslider.js"></script>
 	<script>
 		$(document).ready(function(){
+
 			$(".slider").bxSlider({
-				auto:true,mode:'vertical'
+				pager:false
 			});
+			$(".slider01").bxSlider({
+				controls:false
+			});
+			$(".slider02").bxSlider({
+				controls:false
+			});
+
+
+
 		});
+
 	</script>
 	<style>
 		*{padding:0;margin:0;}
+		img{display: block;}
+
 		div.visual{width:980px;margin:0 auto;}
-		div.visual img{display: block;}
+
+		div.visual_wrap{width: 980px;margin:0 auto;}
+		div.visual_wrap:after{content:"";clear: both;display: block;}
+		div.visual01{width:490px;float: left;}
+		div.visual02{width:490px;float: left;}
 
 		.bx-wrapper {
      box-shadow:none; 
      border:none; 
-     background: #fff; 
+     margin-bottom:0;
 		}
-		ul.slider>li{width:980px;height:408px;}
+		.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    bottom:20px;}
+		
 	</style>
 
 </head>
@@ -37,5 +56,23 @@
 			<li><img src="images/pc03.jpg" alt=""></li>
 		</ul>
 	</div>
+
+	<div class="visual_wrap">
+		<div class="visual01">
+			<div class="slider01">
+				<div><img src="images/pc01.jpg" alt=""></div>
+				<div><img src="images/pc02.jpg" alt=""></div>
+				<div><img src="images/pc03.jpg" alt=""></div>
+			</div>
+		</div>
+		<div class="visual02">
+			<div class="slider02">
+				<div><img src="images/pc01.jpg" alt=""></div>
+				<div><img src="images/pc02.jpg" alt=""></div>
+				<div><img src="images/pc03.jpg" alt=""></div>
+			</div>
+		</div>
+	</div>
+	
 </body>
 </html>
