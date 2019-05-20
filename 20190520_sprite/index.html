@@ -6,11 +6,12 @@
 	<title>sprite</title>
 	<link rel="stylesheet" href="../css/reset.css">
 	<style>
+		
 		div.icon_wrap{}
 		div.icon_wrap .btn{float: left;
 			width:30px;height: 30px;
 			background-image:url(../images/icon-sprite.png);
-			text-indent:-1000px;cursor:pointer;
+			text-indent:-1000px;
 		}
 		div.icon_wrap .item01{background-position:0 -330px;transition:0.3s;}
 		div.icon_wrap .item02{background-position:-40px -330px;transition:0.3s;}
@@ -31,16 +32,64 @@
 		div.icon_wrap .item05.active{background-position:-160px -360px;}
 
 
+
+
+		ul.sns_wrap > li{
+			width:30px;height: 30px;
+			background-image:url(../images/icon-sprite.png);
+			text-indent:-10000px;float: left;opacity:1;transition:0.3s;
+			margin-right:10px;
+		}
+		ul.sns_wrap > li:nth-child(1){background-position:-200px -450px;}
+		ul.sns_wrap > li:nth-child(2){background-position:-240px -450px;}
+		ul.sns_wrap > li:nth-child(3){background-position:-280px -450px;}
+
+		ul.sns_wrap > li:hover{opacity:0.3;}
+
+		ul.sns_wrap a{display: block;line-height:30px;}
+
+		.box{width: 100px;height: 100px;background-color:red;
+			color:white;opacity:1;transition:.3s;}
+		.box:hover{opacity:0.3;}
+
+
+		.box1{width: 100px;height: 100px;background-color:rgb(0,255,255,1);
+			color:white;transition:.3s;}
+		.box1:hover{background-color:rgb(0,255,255,0.3);}
+
+
+		.box2{width: 100px;height: 100px;background-color:rgb(0,255,255,1);
+			color:white;display:block;transition:1s;}
+		.box2:hover{display:none;}
+
 	</style>
 </head>
 <body>
 	<div class="icon_wrap clearfix">
-		<div class="btn item01 active">icon</div>
+		<div class="btn item01 active"><a href="http://www.naver.com">icon</a></div>
 		<div class="btn item02">icon</div>
 		<div class="btn item03">icon</div>
 		<div class="btn item04">icon</div>
 		<div class="btn item05">icon</div>
 	</div>
+	<ul class="sns_wrap clearfix">
+		<li><a href="http://www.fb.com">페이스북</a></li>
+		<li><a href="http://www.youtube.com">유투브</a></li>
+		<li><a href="http://www.twiter.com">트위터</a></li>
+	</ul>
+
+	<div class="box">안녕하세요</div>
+	<div class="box1">안녕하세요</div>
+	<div class="box2">안녕하세요</div>
+
+	<nav id="gnb">
+		<div class="menu item01"><a href="#">menu</a></div>
+		<div class="menu item02"><a href="#">menu</a></div>
+		<div class="menu item03 active"><a href="#">menu</a></div>
+		<div class="menu item04"><a href="#">menu</a></div>
+		<div class="menu item05"><a href="#">menu</a></div>
+		<div class="menu item06"><a href="#">menu</a></div>
+	</nav>
 	
 </body>
 </html>
