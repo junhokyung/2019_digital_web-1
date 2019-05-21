@@ -1,6 +1,6 @@
 @charset "utf-8";
 #wrap{width: 460px;margin:0 auto;}
-#header{}
+#header{padding:60px 0;}
 #header h1.logo{
 	width: 240px;height:44px;margin:0 auto;
 	background:url(../images/pc_sp_join.png) no-repeat 0 -105px;
