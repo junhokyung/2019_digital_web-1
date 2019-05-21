@@ -1,0 +1,8 @@
+@charset "utf-8";
+#wrap{width: 460px;margin:0 auto;}
+#header{}
+#header h1.logo{
+	width: 240px;height:44px;margin:0 auto;
+	background:url(../images/pc_sp_join.png) no-repeat 0 -105px;
+}
+#header h1.logo a{display: block;text-indent:-9999px;line-height: 44px;}
