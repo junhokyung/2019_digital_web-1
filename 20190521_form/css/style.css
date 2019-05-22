@@ -17,6 +17,7 @@ body{background-color:#cdcdcd;}
 #content fieldset{
 	border:1px solid #dadada;
 	background-color:#fff;
+	margin-bottom:10px;
 }
 #content fieldset .field{
 	border-bottom:1px solid #f0f0f0;
@@ -36,3 +37,17 @@ body{background-color:#cdcdcd;}
 #content fieldset .field .ico.mail{background-position:0 -47px;}
 #content fieldset .field .ico.pass{background-position:0 -466px;}
 #content fieldset .field .ico.pass2{background-position:0 -515px;}
+
+#content fieldset .field .btn-label{
+	display:block;width:212px;height:31px;border:1px solid #dcdcdc;
+	position:absolute;top:8px;text-align:center;line-height:31px;
+}
+#content fieldset .field .btn-label.male{left:15px;}
+#content fieldset .field .btn-label.female{left:228px;}
+
+#content fieldset .field.btn-radio input{
+
+}
+
+/*common*/
+.w458{width:458px !important;}
