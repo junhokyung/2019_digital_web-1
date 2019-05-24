@@ -6,16 +6,19 @@
 	<title>pc layout</title>
 	<link rel="stylesheet" href="../css/reset.css">
 	<style>
+
+		/*main_header*/
 		#main_header{
 			width: 960px;margin:0 auto;
-			height: 160px;background-color:skyblue;
-			position: relative;
+			height: 160px;_background-color:skyblue;
+			position: relative;margin-bottom:10px;
 		}
 		#main_header > #logo{position: absolute;top:30px;}
 		#main_header > #util_menu{
 			position: absolute;top:0;right:0;
 		}
-
+		
+		/*util_menu*/
 		#util_menu>ul>li{float: left;}
 		#util_menu>ul>li>a{
 			display: block;padding:2px 10px;
@@ -34,7 +37,7 @@
 			color:white;
 		}
 
-
+		/*main_gnb*/
 		#main_header > #main_gnb{
 			position: absolute;bottom:0;right:0;
 		}
@@ -58,6 +61,12 @@
 			color:white;
 		}
 
+		/*content*/
+		#content{width: 960px;margin:0 auto;}
+		#content>#main_section{width: 750px;float: left;}
+		#main_section > .main_article{padding:20px;border: 1px solid #000;margin-bottom:10px;}
+
+		#content>#main_aside{width: 200px;float: right;}
 
 	</style>
 </head>
@@ -76,7 +85,7 @@
 			</ul>
 		</nav>
 		<nav id="main_gnb">
-			<ul>
+			<ul class="clearfix">
 				<li><a href="#">MENU1</a></li>
 				<li><a href="#">MENU2</a></li>
 				<li><a href="#">MENU3</a></li>
@@ -85,7 +94,23 @@
 			</ul>
 		</nav>
 	</header>
-	<div id="content"></div>
+	<div id="content" class="clearfix">
+		<section id="main_section">
+			<article class="main_article">
+				<h2>main_article</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum deleniti similique, officia nihil doloribus. Reprehenderit rem delectus, sapiente tenetur laudantium nisi vitae accusantium dolorem error commodi eaque, in ad, hic tempore! Adipisci quisquam error molestias sed accusantium sapiente porro odit animi ducimus doloremque quod esse, blanditiis veritatis, voluptatum ea perferendis!</p>
+			</article>
+			<article class="main_article">
+				<h2>main_article</h2>
+				<p>Tenetur corporis cupiditate commodi hic nesciunt nobis assumenda veritatis quae accusantium distinctio eum eligendi pariatur harum qui quisquam sapiente, quos sint aliquam, earum saepe eos laudantium culpa, quo quidem est! Ipsam voluptates autem facilis veritatis ullam nulla inventore! Aspernatur, saepe, amet voluptatibus vitae dolores error illum in beatae deserunt mollitia!</p>
+			</article>
+			<article class="main_article">
+				<h2>main_article</h2>
+				<p>Eos necessitatibus natus deleniti minima unde odit exercitationem amet nulla libero, eaque similique adipisci blanditiis quaerat culpa consectetur itaque sint. Nostrum consectetur voluptates rem velit, illo totam molestiae error temporibus cumque pariatur omnis illum. Minus voluptates earum tenetur reiciendis, distinctio veniam quod sit, libero numquam obcaecati eaque. Tempora, animi molestias?</p>
+			</article>
+		</section>
+		<aside id="main_aside"></aside>
+	</div>
 	<footer id="main_footer"></footer>
 </body>
 </html>
