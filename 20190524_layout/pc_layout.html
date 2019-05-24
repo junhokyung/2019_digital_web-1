@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>pc layout</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		#main_header{
+			width: 960px;margin:0 auto;
+			height: 160px;background-color:skyblue;
+			position: relative;
+		}
+		#main_header > #logo{}
+		#main_header > #util_menu{
+			position: absolute;top:0;right:0;
+		}
+		#util_menu>ul{}
+		#util_menu>ul>li{float: left;}
+		#util_menu>ul>li>a{
+			display: block;padding:2px 10px;
+			border: 1px solid #000;
+			border-left:0 none;
+		}
+		#util_menu>ul>li:first-child>a{
+			border-left:1px solid #000;
+			border-radius:10px 0 0 10px;
+		}
+		#util_menu>ul>li:last-child>a{
+			border-radius:0 10px 10px 0;
+		}
+		#util_menu>ul>li>a:hover{
+			background-color: #000;
+			color:white;
+		}
+
+
+		#main_header > #main_gnb{
+			position: absolute;bottom:0;right:0;
+		}
+	</style>
+</head>
+<body>
+	<header id="main_header">
+		<div id="logo">
+			<h1>Lorem ipsum.</h1>
+		</div>
+		<nav id="util_menu">
+			<ul class="clearfix">
+				<li><a href="#">menu1</a></li>
+				<li><a href="#">menu2</a></li>
+				<li><a href="#">menu3</a></li>
+				<li><a href="#">menu4</a></li>
+				<li><a href="#">menu5</a></li>
+			</ul>
+		</nav>
+		<nav id="main_gnb">
+			<ul>
+				<li><a href="#">MENU1</a></li>
+				<li><a href="#">MENU2</a></li>
+				<li><a href="#">MENU3</a></li>
+				<li><a href="#">MENU4</a></li>
+				<li><a href="#">MENU5</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="content"></div>
+	<footer id="main_footer"></footer>
+</body>
+</html>
