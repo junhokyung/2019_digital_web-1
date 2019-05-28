@@ -63,6 +63,26 @@
 			color:#fff;
 			}
 
+			/*bottom gnb*/
+			#bottom_gnb{
+				width:100%;
+				display:table;
+				border-bottom: 1px solid #000;
+			}
+			#bottom_gnb>div{
+				display:table-cell;
+			}
+			#bottom_gnb>div>a{
+				display: block;height:35px;text-align:center;
+				line-height:35px;position: relative;
+			}
+			#bottom_gnb>div>a:after{
+				content:"";display: block;
+				position:absolute;width:1px;height:15px;
+				border-left: 1px solid #000;top:10px;
+				left:-1px;
+			}
+
 	</style>
 </head>
 <body>
@@ -96,7 +116,7 @@
 			<div><a href="#">menu3</a></div>
 			<div><a href="#">menu4</a></div>
 		</nav>
-		
+
 		<nav id="bottom_gnb">
 			<div><a href="#">button</a></div>
 			<div><a href="#">button</a></div>
