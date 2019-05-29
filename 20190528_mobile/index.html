@@ -2,9 +2,10 @@
 <html lang="ko">
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta charset="UTF-8">
 	<title>mobile</title>
-	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="css/reset.css">
 	<style>
 		
 		
@@ -83,10 +84,21 @@
 				left:-1px;
 			}
 
+			/*section*/
+			#section_header{padding: 20px;}
+			#section_article{padding: 20px;}
+
+			/*footer*/
+			#main_footer{
+				padding: 10px;border-top: 1px solid #000;
+				text-align: center;
+			}
+
 	</style>
+	
 </head>
 <body>
-	
+
 	
 
 	<div id="wrap">
@@ -118,7 +130,7 @@
 		</nav>
 
 		<nav id="bottom_gnb">
-			<div><a href="#">button</a></div>
+			<div><a href="#" onclick="alert('안녕하세요');">button</a></div>
 			<div><a href="#">button</a></div>
 			<div><a href="#">button</a></div>
 			<div><a href="#">button</a></div>
@@ -147,5 +159,6 @@
 			<address>website layout basic</address>
 		</footer>
 	</div>
+
 </body>
 </html>
