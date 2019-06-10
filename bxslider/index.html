@@ -23,9 +23,11 @@
 
 			$('.prevBtn').click(function(){
 				myslider.goToPrevSlide();
+				return false;
 			});
 			$('.nextBtn').click(function(){
 				myslider.goToNextSlide();
+				return false;
 			});
 		});
 	</script>
@@ -81,7 +83,9 @@
 			<li><img src="../images/pc02.jpg" alt=""></li>
 			<li><img src="../images/pc03.jpg" alt=""></li>
 		</ul>
-		<div class="prevBtn"><a href="#"><img src="images/btn_prev.png" alt=""></a></div>
+		<div class="prevBtn"><a href="#">
+			<!-- <a href="javascript:void(0)"> 앵커태그 방지-->
+			<img src="images/btn_prev.png" alt=""></a></div>
 		<div class="nextBtn"><a href="#"><img src="images/btn_next.png" alt=""></a></div>
 	</div>
 	<div class="box"></div>
