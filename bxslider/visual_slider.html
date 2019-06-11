@@ -11,6 +11,7 @@
 	<script>
 		$(document).ready(function(){
 			$('.slider').bxSlider({
+				touchEnabled:false,
 				pagerCustom:'.bx-pager'
 			});
 		});
@@ -55,6 +56,14 @@
 </head>
 <body>
 	<div class="wrapper">
+		<div class="main_slider_pager">
+			<div class="bx-pager clearfix">
+				<a href="#" data-slide-index="0">menu1</a>
+				<a href="#" data-slide-index="1">menu2</a>
+				<a href="#" data-slide-index="2">menu3</a>
+				<a href="#" data-slide-index="3">menu4</a>
+			</div>
+		</div>
 		<div class="main_slider">
 			<ul class="slider">
 				<li>
@@ -84,14 +93,7 @@
 			</ul>
 
 		</div>
-		<div class="main_slider_pager">
-			<div class="bx-pager clearfix">
-				<a href="#" data-slide-index="0">menu1</a>
-				<a href="#" data-slide-index="1">menu2</a>
-				<a href="#" data-slide-index="2">menu3</a>
-				<a href="#" data-slide-index="3">menu4</a>
-			</div>
-		</div>
+		
 	</div>
 
 </body>
