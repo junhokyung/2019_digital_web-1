@@ -13,23 +13,27 @@
 	<script>
 		// jquery(document).ready();
 		$(document).ready(function(){
-			
-			var myslider = $('.slider').bxSlider({
+			var myslider =  $('.slider').bxSlider({
 				auto:true,
 				pager:false,
 				controls:false
 			});
-			// $('.slider1').bxSlider();
+
 
 			$('.prevBtn').click(function(){
 				myslider.goToPrevSlide();
-				return false;
 			});
 			$('.nextBtn').click(function(){
 				myslider.goToNextSlide();
-				return false;
 			});
+
+
 		});
+
+		
+
+
+
 	</script>
 	<style>
 		body{background-color:skyblue;}
