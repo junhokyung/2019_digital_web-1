@@ -69,7 +69,7 @@
 		}
 
 		.content>li:hover .overlay{bottom:0;opacity:0.7;}
-		.content_wrap{padding:20px;}
+		.content_wrap{padding:20px;display: none;}
 		.content_wrap>h2{text-align:center;}
 		.content_wrap>h2:after{
 			content:"";display: block;width:150px;height: 5px;background-color: #000;margin:10px auto;
@@ -79,7 +79,7 @@
 		.orange{background-color:orange;}
 		.skyblue{background-color:skyblue;}
 
-		.back01{background:url(../images/pc01.jpg) no-repeat center;background-size:100%;background-attachment:fixed}
+		.back01{background:url(../images/pc01.jpg) no-repeat center;background-size:cover;background-attachment:fixed}
 
 	</style>
 
@@ -175,6 +175,42 @@
 			</li>
 		
 		</ul>
+	</div>
+	<style>
+		.section_wrap{width: 1000px;margin:0 auto;display: none;}
+		.section>li{width: 25%;height:300px;float: left;border: 1px solid #000;}
+		.section>li:nth-child(2n){background-color:skyblue;}
+		.section>li:nth-child(1){width:75%;}
+		.section>li:nth-child(8){width:75%;}
+	</style>
+	<div class="section_wrap">
+		<ul class="section clearfix">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+
+	<style>
+		.section01{width: 300px;height: 300px;position: relative;overflow:hidden;}
+		.section01 img{display: block;}
+		.section01>.over{width: 300px;height: 300px;background-color:orange;position: absolute;
+			top:300px;transition:0.3s;
+			
+		}
+
+		.section01:hover .over{top:0px;}
+	</style>
+	<div class="section01">
+		<img src="../images/testimg.jpg" alt="">
+		<div class="over">
+			<div class="lastText">Lorem ipsum</div>
+		</div>
 	</div>
 
 </body>
