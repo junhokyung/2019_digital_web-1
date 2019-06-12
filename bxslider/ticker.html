@@ -10,52 +10,87 @@
 	<script src="js/jquery.bxslider.js"></script>
 	<script>
 		$(document).ready(function(){
-			$('.slider').bxSlider({
+			var ticker = $('.slider').bxSlider({
 				mode:'vertical',
 				pager:false,
 				controls:false,
-				auto:true
+				auto:true,
+
 			});
+			$('.bottomBtn').click(function(){
+				ticker.goToPrevSlide();
+				return false; //hash tag 방지
+			});
+			$('.topBtn').click(function(){
+				ticker.goToNextSlide();
+				return false; //hash tag 방지
+			});
+
+
 		});
 	</script>
 	<style>
-		body{background-color: #cdcdcd;}
+		body{background-color:gray;}
+		.wrap{width:800px;;position: relative;}
 		.slider > div{height: 80px;position: relative;}
 		.slider .iconPhoto{
 			width: 50px;height: 50px;border-radius:25px;
 			text-indent:-9999px;
 			background:red url(../images/testimg.jpg) no-repeat center;
 		}
-		.slider .title{width: 300px;line-height:25px;font-size:1.2em;color:red;font-weight:bold;position: absolute;left:60px;top:0;}
+		.slider .title{width: 300px;line-height:25px;font-size:1.2em;color:white;font-weight:bold;position: absolute;left:60px;top:0;}
 
-		.slider .subject{width: 800px;line-height: 40px;background-color:#fff;border-radius:20px;padding:5px 20px;position: absolute;left:60px;bottom:0;}
+		.slider .subject{width: 700px;line-height: 40px;background-color:#fff;border-radius:20px;padding:5px 20px;position: absolute;left:60px;bottom:0;}
 
 		.slider .subject:after{
 			content:"";
 			border-width:10px;
 			border-style:solid;
 			/*border-color:red orange yellow green;*/
-			border-color:transparent blue transparent transparent;
+			border-color:transparent #fff transparent transparent;
 			position: absolute;
 			top:15px;left:-23px;
 			
 
 		}
+		.bx-wrapper {
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+    border:0 none;
+    background:none;
+}
 
+.topBtn , .bottomBtn{position: absolute;}
+.topBtn{right:10px;top:30px}
+.bottomBtn{right:10px;top:55px;}
 	</style>
+
+
 </head>
 <body>
-	<div class="slider">
-		<div>
-			<div class="iconPhoto">사진</div>
-			<div class="title">컴퓨터학과</div>
-			<div class="subject">Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+	<div class="wrap">
+		<div class="slider">
+			<div>
+				<div class="iconPhoto">사진</div>
+				<div class="title">컴퓨터학과1</div>
+				<div class="subject">Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+			</div>
+			<div>
+				<div class="iconPhoto">사진</div>
+				<div class="title">디지털미디어2</div>
+				<div class="subject">Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+			</div>
+			<div>
+				<div class="iconPhoto">사진</div>
+				<div class="title">디지털미디어3</div>
+				<div class="subject">Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+			</div>
 		</div>
-		<div>
-			<div class="iconPhoto">사진</div>
-			<div class="title">디지털미디어</div>
-			<div class="subject">Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
-		</div>
+		<div class="topBtn"><a href="#">
+			<!-- <a href="javascript:void(0)"> 앵커태그 방지-->
+			<img src="../images/btn_top01.png" alt=""></a></div>
+		<div class="bottomBtn"><a href="#"><img src="../images/btn_bottom01.png" alt=""></a></div>
 	</div>
 
 	
