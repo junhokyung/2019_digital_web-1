@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<link rel="stylesheet" href="../../css/reset.css">
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<style>
+		.tabWrap{width: 500px;margin:0 auto;}
+		.tabWrap ul{}
+		.tabWrap ul li{float: left;width: 20%;line-height:40px;text-align: center;border-right:1px solid gray;cursor:pointer}
+		.tabWrap ul li:first-child{border-left:1px solid gray;}
+		.tabWrap ul li:hover{background-color:skyblue;}
+		.boxWrap > div{display: none;}
+		.tabWrap ul li.active{background-color:darkblue;color:white;}
+		.tabWrap ul li.next{background-color:skyblue}
+
+	</style>
+	<script>
+		$(document).ready(function(){
+			$(".boxWrap > div").hide();
+			// $(".boxWrap > div").eq(0).show();
+			$(".boxWrap > div").eq(0).fadeIn();
+
+			$(".tabWrap > ul > li").click(function(){
+				//$(this).index() 자신의 index를 구함
+				var liNum = $(this).index();
+				console.log(liNum);
+				$(".tabWrap > ul >li").removeClass();
+				$(this).addClass("active");
+				// if (liNum == 4){
+				// 		$(".tabWrap > ul > li").eq(0).addClass("next");	
+				// }else{
+				// 		$(this).next().addClass("next");	
+				// }
+				
+				$(".boxWrap > div").hide();
+				$(".boxWrap > div").eq(liNum).fadeIn();
+			});
+
+			// $(".tabWrap > ul > li").eq(0).click(function(){
+			// 	$(".boxWrap > div").hide();
+			// 	$(".boxWrap > div").eq(0).show();
+			// });
+
+			// $(".tabWrap > ul > li").eq(1).click(function(){
+			// 	$(".boxWrap > div").hide();
+			// 	$(".boxWrap > div").eq(1).show();
+			// });
+			// $(".tabWrap > ul > li").eq(2).click(function(){
+			// 				$(".boxWrap > div").hide();
+			// 				$(".boxWrap > div").eq(2).show();
+			// 			});
+			// $(".tabWrap > ul > li").eq(3).click(function(){
+			// 				$(".boxWrap > div").hide();
+			// 				$(".boxWrap > div").eq(3).show();
+			// 			});
+			// $(".tabWrap > ul > li").eq(4).click(function(){
+			// 	$(".boxWrap > div").hide();
+			// 	$(".boxWrap > div").eq(4).show();
+			// });
+
+
+
+
+
+			// $(".box1").show();
+			// $(".boxWrap > div.box1").show();
+			//$(".boxWrap > div:eq(0)").show();
+			// $(".boxWrap > div").first().show();
+			//$(".boxWrap").children().first().show();
+		});
+	</script>
+</head>
+<body>
+	<div class="tabWrap">
+		<ul class="clearfix">
+			<li class="active">menu1</li>
+			<li>menu2</li>
+			<li>menu3</li>
+			<li>menu4</li>
+			<li>menu5</li>
+		</ul>
+		<div class="boxWrap">
+			<div class="box1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quidem ipsa delectus reiciendis veniam quia nesciunt recusandae illo. Dolor, unde?</div>
+			<div class="box2">Aut consequatur sequi, natus tempore minus omnis sint facere! Quidem architecto ratione quas dolorum asperiores ea dignissimos praesentium labore harum?</div>
+			<div class="box3">Commodi repellendus beatae officia, aliquid temporibus numquam cumque nemo voluptas aperiam reprehenderit, doloremque quasi doloribus labore magnam corporis repellat alias.</div>
+			<div class="box4">Alias, culpa voluptates quam laudantium fugit repellat! Dolores exercitationem id a odio voluptatibus amet, quam, officiis recusandae quidem perferendis enim?</div>
+			<div class="box5">Sed vel omnis dolor, tempora animi voluptatibus quia fugit perferendis, magni veniam rem ratione, laudantium aperiam error, natus odio adipisci.</div>
+		</div>
+	</div>
+</body>
+</html>
