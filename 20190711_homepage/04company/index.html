@@ -8,13 +8,27 @@
 	<link rel="stylesheet" href="css/fontawesome/css/all.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<style>
+		
 		.topnav{background-color:#333;}
 		.topnav a{display:block;float: left;padding:14px 16px;color:#f2f2f2;}
 		.topnav a:hover{background-color:#ddd;color:#000;}
 		.topnav .icon{float: right;}
 		.topnav .icon{display: none;}
 
-		@media screen and (max-width:600px){
+
+		
+		@media screen and (min-width:769px){
+			.menuWrap{position:fixed;width:1260px;left:50%;margin-left:-630px;top:20px;}
+		}
+
+
+		@media screen and (min-width:577px) and (max-width:768px){
+			.menuWrap{position:relative;width:100%;left:0;margin-left:0;top:0;}
+		}
+
+
+		@media screen and (max-width:576px){
+			.menuWrap{position:relative;width:100%;left:0;margin-left:0;top:0;}
 			.topnav a:not(:first-child){display: none;}
 			.topnav a.icon{display: block;}
 			.topnav.responsive{position: relative;}
@@ -33,7 +47,7 @@
 			// });
 			$(".icon").click(function(){
 					var topClass = $("#myTopmenu").attr("class");
-					console.log(topClass)
+					console.log(topClass);
 					if( topClass == "topnav clearfix"){
 						$("#myTopmenu").addClass("responsive");
 					}else{
@@ -45,14 +59,16 @@
 
 </head>
 <body>
-	<div id="myTopmenu" class="topnav clearfix">
-		<a href="#">HOME</a>
-		<a href="#"><i class="fas fa-newspaper"></i> News</a>
-		<a href="#"><i class="fas fa-home"></i> Contact</a>
-		<a href="#"><i class="fas fa-ban"></i> About</a>
-		<a href="#" class="icon"><i class="fas fa-bars"></i></a>
-		<!-- <a href="#" class="iconx"><i class="fas fa-home"></i></a> -->
+	<div class="menuWrap">
+		<div id="myTopmenu" class="topnav clearfix">
+			<a href="#">HOME</a>
+			<a href="#"><i class="fas fa-newspaper"></i> News</a>
+			<a href="#"><i class="fas fa-home"></i> Contact</a>
+			<a href="#"><i class="fas fa-ban"></i> About</a>
+			<a href="#" class="icon"><i class="fas fa-bars"></i></a>
+			<!-- <a href="#" class="iconx"><i class="fas fa-home"></i></a> -->
+		</div>
 	</div>
-	<div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia dolores laborum veritatis porro ducimus quaerat aliquid cupiditate a pariatur corporis.</div>
+	<div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, excepturi consequatur. Consectetur sint dicta eos esse rem deserunt, ratione molestias ipsa doloremque. Ipsam architecto cumque ab quod eos in, deserunt tenetur dignissimos fugit soluta temporibus unde. Delectus quo officiis dolore nobis praesentium, asperiores deleniti impedit provident, velit officia a repellat. Aut error, veritatis! Hic maiores nesciunt dolor culpa, voluptates placeat, minima esse recusandae nihil quibusdam nulla quaerat dicta cupiditate unde iste accusantium accusamus. Tenetur ipsum ad quam illo harum magni corrupti magnam excepturi explicabo quos, dolore maxime vero, laborum, impedit consequatur sit odit aperiam voluptas tempore nobis veritatis similique nisi alias sapiente. Velit corporis, error dignissimos rem deserunt sapiente amet, delectus voluptatem libero similique provident sit tempore esse labore consectetur vero explicabo mollitia odio possimus fuga, officiis ipsum natus nisi fugiat? Sit, doloribus, magni? Necessitatibus deserunt officiis ullam, aut velit provident ipsa rerum deleniti nulla sit architecto in excepturi rem sint repellendus aspernatur eum possimus, corrupti dolorum eius ratione quis similique saepe. Velit modi, ratione repellendus excepturi? Earum aliquid molestias quibusdam placeat modi dolor possimus, mollitia aut ea veniam ipsum atque necessitatibus aperiam est nemo repudiandae consequuntur doloribus ex nisi, unde, ipsam eius corrupti! Ad quas sapiente quasi dignissimos beatae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam repudiandae repellendus qui rem nisi similique fugit sunt velit voluptatum voluptates, quia officiis obcaecati sed non maxime eum magni? Voluptates pariatur vitae dolore modi dolores quod blanditiis praesentium quidem odio nemo aliquam distinctio, fuga ex error accusantium numquam voluptatem alias sit libero eligendi reprehenderit odit. Mollitia eum itaque quam. Veniam, voluptatibus ad asperiores dolores, dolore excepturi. Natus expedita consectetur accusamus minus veritatis. Qui temporibus corporis dolorum, deserunt magnam, debitis beatae nemo aliquam. Quidem qui eligendi praesentium voluptatum deleniti eos sit maxime? Maiores laudantium dolorem ut debitis autem fuga iusto inventore ab architecto vel, quod facilis illum ducimus nostrum libero, ex eaque recusandae sit a consequuntur impedit. Atque, inventore autem voluptates in ab quis magni est. Inventore saepe totam quibusdam esse velit sint quisquam nesciunt obcaecati a, rem eaque, mollitia amet dolor natus nihil eum possimus alias fugit expedita. Velit quam aliquam tempore cupiditate sed, assumenda ut, adipisci eaque, mollitia ex exercitationem sunt, distinctio incidunt aspernatur! Maxime nihil autem hic pariatur saepe praesentium, itaque deserunt quod fugit eligendi, excepturi quibusdam! Facere nesciunt eveniet cupiditate commodi expedita, ipsam culpa deleniti, aliquam excepturi distinctio sit quae dignissimos totam vel earum corrupti, et accusamus saepe harum accusantium recusandae ex. Ab aut eveniet pariatur nesciunt repudiandae doloremque, ratione iure architecto sapiente animi, ex! Quia illo a nisi repellendus error blanditiis dolores veniam iusto alias voluptate. Debitis eligendi neque et facere doloremque, dolorum nostrum minima fuga minus quaerat nam illum molestiae corporis quam fugiat omnis accusamus consequuntur tenetur sapiente! Minus ad aut, totam voluptas iure neque illo odit exercitationem tempore praesentium laudantium culpa, assumenda quasi maxime, aliquid similique facere voluptates dolor! Pariatur quod nobis, sint iure a cum, numquam debitis sit corporis eius error voluptate officiis et minima aspernatur voluptas! Repellendus iste quasi quae quisquam, pariatur quaerat!</div>
 </body>
 </html>
