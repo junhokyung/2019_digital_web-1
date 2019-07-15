@@ -63,31 +63,39 @@
 		.wrapper ul li:last-child{margin-right:0;}
 	</style>
 	<script>
+		var viewImg = [
+			"../images/spring.jpg",
+			"../images/summer.jpg",
+			"../images/fall.jpg",
+			"../images/winter.jpg"
+			]; //viewImg[0]
+
+
 		$(document).ready(function(){
-			$(".wrapper > ul > li:eq(0)").click(function(e){
-				// $(".image > img").attr(속성,속성값)/set  .attr("속성")/get;
-				$(".image > img").attr("src","../images/spring.jpg");
-				return false;
-				//e.preventDefault();
+
+			$(".wrapper > ul > li").click(function(){
+				var num = $(this).index();
+				$(".image>img").attr("src",viewImg[num]);
 			});
-			$(".wrapper > ul > li:eq(1)").click(function(e){
+
+			// $(".wrapper > ul > li:eq(0)").click(function(e){
 				// $(".image > img").attr(속성,속성값)/set  .attr("속성")/get;
-				$(".image > img").attr("src","../images/summer.jpg");
-				return false;
+				// $(".image > img").attr("src","../images/spring.jpg");
+				// return false;
 				//e.preventDefault();
-			});
-			$(".wrapper > ul > li:eq(2)").click(function(e){
-				// $(".image > img").attr(속성,속성값)/set  .attr("속성")/get;
-				$(".image > img").attr("src","../images/fall.jpg");
-				return false;
-				//e.preventDefault();
-			});
-			$(".wrapper > ul > li:eq(3)").click(function(e){
-				// $(".image > img").attr(속성,속성값)/set  .attr("속성")/get;
-				$(".image > img").attr("src","../images/winter.jpg");
-				return false;
-				//e.preventDefault();
-			});
+			// });
+			// $(".wrapper > ul > li:eq(1)").click(function(e){
+			// 	$(".image > img").attr("src","../images/summer.jpg");
+			// 	return false;
+			// });
+			// $(".wrapper > ul > li:eq(2)").click(function(e){
+			// 	$(".image > img").attr("src","../images/fall.jpg");
+			// 	return false;
+			// });
+			// $(".wrapper > ul > li:eq(3)").click(function(e){
+			// 	$(".image > img").attr("src","../images/winter.jpg");
+			// 	return false;
+			// });
 
 		});
 	</script>
