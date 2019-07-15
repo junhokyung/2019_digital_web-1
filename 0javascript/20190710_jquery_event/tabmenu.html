@@ -12,19 +12,28 @@
 		div#wrapper li:last-child{margin-right:0;}
 	</style>
 	<script>
+		var viewImg=[
+			"../images/spring.jpg",
+			"../images/summer.jpg",
+			"../images/fall.jpg",
+			"../images/winter.jpg"
+			]
+	
+
 		$(document).ready(function(){
-			$(".nav li:eq(0)").click(function(){
-				$(".image > img").attr("src","../images/spring.jpg").attr("alt","봄");
+			$(".nav li").click(function(){
+				var num = $(this).index();
+				$(".image > img").attr("src",viewImg[num]);
 			});
-			$(".nav li:eq(1)").click(function(){
-				$(".image > img").attr("src","../images/summer.jpg").attr("alt","여름");
-			});
-			$(".nav li:eq(2)").click(function(){
-				$(".image > img").attr({src:"../images/fall.jpg",alt:"가을"});
-			});
-			$(".nav li:eq(3)").click(function(){
-				$(".image > img").attr({src:"../images/winter.jpg",alt:"겨울"});
-			});
+			//$(".nav li:eq(1)").click(function(){
+			//	$(".image > img").attr("src","../images/summer.jpg").attr("alt","여름");
+			//});
+			//$(".nav li:eq(2)").click(function(){
+			//	$(".image > img").attr({src:"../images/fall.jpg",alt:"가을"});
+			//});
+			//$(".nav li:eq(3)").click(function(){
+			//	$(".image > img").attr({src:"../images/winter.jpg",alt:"겨울"});
+		//	});
 			// $(".nav li").eq(0).click(function(){});
 		});
 	</script>
