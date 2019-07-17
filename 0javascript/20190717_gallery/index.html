@@ -24,6 +24,17 @@
 		
 
 	</style>
+	<script>
+		$(function(){
+			$(".thumb").click(function(){
+				var i = $(this).index();
+				console.log(i);
+				// $("#image > p").css("display","none");
+				// $("#image > p").css("display","none").eq(i).css("display","block");
+				$("#image > p").hide().eq(i).show();
+			});
+		});
+	</script>
 </head>
 <body>
 	<div id="gallery">
