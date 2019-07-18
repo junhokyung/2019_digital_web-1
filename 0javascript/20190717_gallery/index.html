@@ -33,6 +33,32 @@
 				// $("#image > p").css("display","none").eq(i).css("display","block");
 				$("#image > p").hide().eq(i).show();
 			});
+			//$(".right").on("click",function(){});
+			var current = 0;
+			$(".right").click(function(){
+				if(current <= 3) { 
+					current++; 
+					if(current == 3){current = 0;}
+				}
+				//current = current + 1;
+				move();
+
+			});
+			$(".left").click(function(){
+				if(current >= 0) { 
+					current--;
+					if(current == -1){current = 2;}
+				} 
+				//current = current - 1;
+				move();
+			});
+
+			function move(){
+				var num = current * 760 * -1;
+				console.log(num);
+				//$(".container > ul").css("left",num);
+				$(".container > ul").animate({left:num});
+			}
 		});
 	</script>
 </head>
