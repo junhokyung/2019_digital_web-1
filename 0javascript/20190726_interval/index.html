@@ -31,7 +31,7 @@
 				$(".btn").trigger("click");
 			}
 
-			var addNum = setInterval(triBtn,1000)
+			var addNum = setInterval(triBtn,1000);
 
 			$(".ebtn").click(function(){
 				clearInterval(addNum);
@@ -39,8 +39,10 @@
 			});
 
 			$(".sbtn").click(function(){
-				addNum = setInterval(add,1000);
+				addNum = setInterval(triBtn,1000);
 			});
+
+
 		});
 	</script>
 </head>
@@ -49,6 +51,7 @@
 	<button class="ebtn">멈춤</button>
 	<button class="sbtn">시작</button>
 	<div class="txt"></div>
+	<div class="size"></div>
 	<div class="num">
 		
 	</div>
